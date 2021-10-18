@@ -1,0 +1,24 @@
+button {
+  border: 1px solid transparent;
+  outline: 0;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.8rem;
+  width: auto;
+  text-align: center;
+  padding: 0.3rem 0.6rem;
+  min-height: 1.8rem;
+  border-radius: 1.25rem;
+  justify-content: center;
+}
+
+button.primary {
+  background: linear-gradient(90.3deg, #ff2473 0.33%, #de063a 99.81%);
+  color: #fff;
+}
+
+button.secondary {
+  border: 1px solid #ff2473;
+  background: none;
+  color: #fff;
+}
