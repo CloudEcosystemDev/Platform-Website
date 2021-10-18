@@ -24,8 +24,58 @@ body {
   font-size: 3.5rem; }
 
 .footer {
-  height: 10rem;
-  background-color: #000; }
+  position: absolute;
+  background-color: #233046;
+  width: 100%;
+  bottom: 0; }
+
+.col {
+  width: 50%;
+  display: flex; }
+
+.row {
+  display: flex;
+  padding: 48px 47px 37px 47px; }
+
+.sub-col {
+  display: flex;
+  flex-direction: column; }
+
+.left-ft-down {
+  justify-content: center;
+  text-align: center;
+  color: white; }
+
+.right-img {
+  margin-left: 88px; }
+
+.small-header {
+  font-size: 18px;
+  color: white;
+  font-weight: 600; }
+
+.first-list {
+  padding-left: 10px;
+  color: white; }
+
+.right-list {
+  width: 50%;
+  display: flex;
+  flex-direction: column; }
+
+.left-list {
+  width: 50%;
+  display: flex;
+  flex-direction: column; }
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: normal;
+  font-size: 16px; }
+
+a:hover {
+  color: beige; }
 
 .header {
   height: 80px;
