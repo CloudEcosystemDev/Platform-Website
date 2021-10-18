@@ -31,7 +31,10 @@ body {
   height: 80px;
   position: relative;
   background-color: #233046;
-  display: flex; }
+  padding-right: 50px;
+  padding-left: 50px;
+  display: flex;
+  align-items: center; }
 
 button {
   border: 1px solid transparent;
@@ -58,4 +61,5 @@ button.secondary {
 .header-buttons {
   justify-content: center;
   float: right;
-  align-items: center; }
+  align-items: center;
+  margin-right: 56; }
