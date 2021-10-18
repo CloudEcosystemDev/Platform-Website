@@ -144,8 +144,6 @@ a:hover {
   font-weight: 600;
   font-size: 24px;
   line-height: 36px;
-  max-width: 360px;
-  text-align: center;
   color: white; }
   .logo-text-white_small {
     margin-top: 32px;
@@ -343,6 +341,9 @@ a:hover {
 
 .control-text {
   margin-left: 5px; }
+
+.control-image {
+  margin: auto; }
 
 button {
   border: 1px solid transparent;
