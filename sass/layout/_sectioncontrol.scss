@@ -1,0 +1,40 @@
+.section-control {
+  padding: 140px;
+  justify-content: center;
+}
+.intro-header-control {
+  font-weight: 600;
+  font-size: 48px;
+}
+.subheader-text {
+  font-weight: 200;
+  font-size: 24px;
+}
+.control-container {
+  margin-top: 76px;
+  display: flex;
+  justify-content: space-around;
+}
+.control-card {
+  padding: 9px;
+  display: flex;
+  width: 360px;
+  height: 156px;
+  background: #ffffff;
+  border: 1px solid rgba(228, 225, 225, 0.5);
+  box-sizing: border-box;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  text-align: center;
+}
+.control-text-header {
+  font-weight: 600;
+  font-size: 18px;
+}
+.control-text-subheader {
+  font-weight: normal;
+  font-size: 14px;
+}
+.control-text {
+  margin-left: 5px;
+}

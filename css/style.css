@@ -221,7 +221,7 @@ a:hover {
   border-radius: 20px; }
 
 .card-item-dark {
-  background: linear-gradient(162.37deg, #313A55 9.74%, #23293D 100%);
+  background: linear-gradient(162.37deg, #313a55 9.74%, #23293d 100%);
   height: 784px;
   width: 380px;
   border-radius: 20px;
@@ -247,7 +247,7 @@ a:hover {
 .card-header-dark {
   font-weight: 600;
   font-size: 48px;
-  color: linear-gradient(#FF2473 100%, #30BCED 100%); }
+  color: linear-gradient(#ff2473 100%, #30bced 100%); }
 
 .card-price {
   margin-top: 50px;
@@ -265,7 +265,9 @@ a:hover {
   display: flex;
   flex-direction: column;
   background: linear-gradient(96.95deg, #ff2473 0.26%, #de063a 72.22%);
-  color: white; }
+  color: white;
+  border-radius: 20px;
+  margin-top: 30px; }
 
 .dark-text-cont {
   width: fit-content;
@@ -278,6 +280,68 @@ a:hover {
 .cont-subheader {
   font-size: 24px;
   margin-bottom: 50px; }
+
+.question-text {
+  font-size: 32px;
+  color: #000; }
+
+.questions-container {
+  margin-top: 70px;
+  text-align: initial; }
+
+.question-header {
+  font-size: 32px;
+  font-weight: 600; }
+
+.questions {
+  padding-top: 20px;
+  padding-left: 15px; }
+
+.question {
+  display: flex;
+  font-size: 24px; }
+
+.question-text {
+  margin-left: 5px; }
+
+.section-control {
+  padding: 140px; }
+
+.intro-header-control {
+  font-weight: 600;
+  font-size: 48.1304px; }
+
+.subheader-text {
+  font-weight: 200;
+  font-size: 24px; }
+
+.control-container {
+  margin-top: 76px;
+  display: flex;
+  justify-content: space-around; }
+
+.control-card {
+  padding: 9px;
+  display: flex;
+  width: 360px;
+  height: 156px;
+  background: #ffffff;
+  border: 1px solid rgba(228, 225, 225, 0.5);
+  box-sizing: border-box;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  text-align: center; }
+
+.control-text-header {
+  font-weight: 600;
+  font-size: 18px; }
+
+.control-text-subheader {
+  font-weight: normal;
+  font-size: 14px; }
+
+.control-text {
+  margin-left: 5px; }
 
 button {
   border: 1px solid transparent;

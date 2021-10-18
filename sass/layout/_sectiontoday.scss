@@ -10,25 +10,24 @@
   font-size: 48px;
 }
 .card-item {
-    height: 784px;
+  height: 784px;
   width: 380px;
   border: 1px solid #ff2473;
   padding: 30px;
   border-radius: 20px;
 }
 .card-item-dark {
-    background: linear-gradient(162.37deg, #313A55 9.74%, #23293D 100%);
-    height: 784px;
-    width: 380px;
-    border-radius: 20px;
-    color: white;
-    padding: 30px;
-
-  }
+  background: linear-gradient(162.37deg, #313a55 9.74%, #23293d 100%);
+  height: 784px;
+  width: 380px;
+  border-radius: 20px;
+  color: white;
+  padding: 30px;
+}
 .card-items {
-    width: 100%;
-    justify-content: space-evenly;
-    display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  display: flex;
 }
 .medium-line {
   font-weight: 600;
@@ -42,39 +41,63 @@
   font-size: 48px;
 }
 .card-header-dark {
-    font-weight: 600;
-    font-size: 48px;
-    color: linear-gradient(#FF2473 100%, #30BCED 100% );
-  }
+  font-weight: 600;
+  font-size: 48px;
+  color: linear-gradient(#ff2473 100%, #30bced 100%);
+}
 
 .card-price {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    font-size: 48px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 48px;
 }
 .mini-text {
-    font-weight: 600;
-    font-size: 12.0326px;
-    color: #666666;
+  font-weight: 600;
+  font-size: 12.0326px;
+  color: #666666;
 }
 .radiant-small-container {
-    padding: 30px;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    background: linear-gradient(96.95deg, #ff2473 0.26%, #de063a 72.22%);
-    color: white;
-
+  padding: 30px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(96.95deg, #ff2473 0.26%, #de063a 72.22%);
+  color: white;
+  border-radius: 20px;
+  margin-top: 30px;
 }
 .dark-text-cont {
-    width: fit-content;
-    justify-content: center;
-    color: black;
+  width: fit-content;
+  justify-content: center;
+  color: black;
 }
 .cont-header {
-    font-size: 32px;
+  font-size: 32px;
 }
 .cont-subheader {
-    font-size: 24px;
-    margin-bottom: 50px;
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+.question-text {
+  font-size: 32px;
+  color: #000;
+}
+.questions-container {
+  margin-top: 70px;
+  text-align: initial;
+}
+.question-header {
+  font-size: 32px;
+  font-weight: 600;
+}
+.questions {
+  padding-top: 20px;
+  padding-left: 15px;
+}
+.question {
+  display: flex;
+  font-size: 24px;
+}
+.question-text {
+  margin-left: 5px;
 }
