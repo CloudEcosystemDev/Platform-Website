@@ -305,11 +305,12 @@ a:hover {
   margin-left: 5px; }
 
 .section-control {
-  padding: 140px; }
+  padding: 140px;
+  text-align: center; }
 
 .intro-header-control {
   font-weight: 600;
-  font-size: 48.1304px; }
+  font-size: 48px; }
 
 .subheader-text {
   font-weight: 200;
