@@ -24,7 +24,6 @@ body {
   font-size: 3.5rem; }
 
 .footer {
-  position: absolute;
   background-color: #233046;
   width: 100%;
   bottom: 0; }
@@ -86,6 +85,200 @@ a:hover {
   display: flex;
   align-items: center; }
 
+.section-intro {
+  padding-top: 52px;
+  padding-bottom: 100px;
+  padding-right: 156px;
+  padding-left: 156px;
+  text-align: center; }
+
+.intro-header {
+  font-size: 48.1304px;
+  color: #de063a; }
+
+.buttons {
+  margin-top: 72px; }
+
+.gif-container {
+  margin-top: 60px; }
+
+.section-saas {
+  padding-right: 140px;
+  padding-left: 140px;
+  text-align: center;
+  margin-top: 100px; }
+
+.intro-sass-header {
+  font-size: 48.1304px;
+  color: #23293d; }
+
+.intro-sass-subheader {
+  margin-top: 32px;
+  margin-bottom: 36px;
+  font-size: 24.0652px;
+  color: black;
+  max-width: 1000px;
+  margin: 0 auto; }
+
+.items {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 156px;
+  justify-content: center; }
+
+.item {
+  display: flex;
+  text-align: center;
+  flex-direction: column; }
+
+.logo-text {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  max-width: 360px;
+  text-align: center;
+  color: #000000; }
+
+.logo-text-white {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  max-width: 360px;
+  text-align: center;
+  color: white; }
+  .logo-text-white_small {
+    margin-top: 32px;
+    font-weight: 200;
+    font-size: 32.087px;
+    text-align: center; }
+
+.radiant-container {
+  background: linear-gradient(96.95deg, #ff2473 0.26%, #de063a 72.22%);
+  width: 1264px;
+  height: 474px;
+  padding: 43px;
+  border-radius: 20px;
+  margin: 0 auto; }
+
+.section-Icenter {
+  padding-right: 88px;
+  padding-left: 88px;
+  text-align: center; }
+
+.item-steps {
+  margin-top: 110px;
+  display: flex;
+  justify-content: center; }
+
+.item-step {
+  display: flex;
+  padding-right: 100px;
+  padding-left: 100px;
+  color: black; }
+
+.underlined {
+  text-decoration: underline; }
+
+.vector {
+  margin-left: 100px; }
+
+.thin-line {
+  border: 1px solid #898989;
+  margin-top: 24px; }
+
+.platform-container {
+  margin-top: 54px; }
+
+.section-growing {
+  text-align: center;
+  padding-right: 50px;
+  padding-left: 50px; }
+
+.growing-header {
+  font-size: 48.1304px;
+  color: black; }
+
+.connectors-container {
+  display: flex; }
+
+.section-today {
+  padding-right: 90px;
+  padding-left: 90px;
+  justify-content: center;
+  text-align: center; }
+
+.today-header {
+  font-size: 48px;
+  color: black;
+  font-size: 48px; }
+
+.card-item {
+  height: 784px;
+  width: 380px;
+  border: 1px solid #ff2473;
+  padding: 30px;
+  border-radius: 20px; }
+
+.card-item-dark {
+  background: linear-gradient(162.37deg, #313A55 9.74%, #23293D 100%);
+  height: 784px;
+  width: 380px;
+  border-radius: 20px;
+  color: white;
+  padding: 30px; }
+
+.card-items {
+  width: 100%;
+  justify-content: space-evenly;
+  display: flex; }
+
+.medium-line {
+  font-weight: 600;
+  font-size: 24px; }
+
+.thin-line-dark {
+  border: 1px solid #000; }
+
+.card-header {
+  font-weight: 600;
+  font-size: 48px; }
+
+.card-header-dark {
+  font-weight: 600;
+  font-size: 48px;
+  color: linear-gradient(#FF2473 100%, #30BCED 100%); }
+
+.card-price {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 48px; }
+
+.mini-text {
+  font-weight: 600;
+  font-size: 12.0326px;
+  color: #666666; }
+
+.radiant-small-container {
+  padding: 30px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(96.95deg, #ff2473 0.26%, #de063a 72.22%);
+  color: white; }
+
+.dark-text-cont {
+  width: fit-content;
+  justify-content: center;
+  color: black; }
+
+.cont-header {
+  font-size: 32px; }
+
+.cont-subheader {
+  font-size: 24px;
+  margin-bottom: 50px; }
+
 button {
   border: 1px solid transparent;
   outline: 0;
@@ -107,6 +300,16 @@ button.secondary {
   border: 1px solid #ff2473;
   background: none;
   color: #fff; }
+
+button.dark-text {
+  color: #313a55;
+  border: 1px solid #ff2473;
+  background: none; }
+
+button.dark-text-cont {
+  color: #313a55;
+  border: 1px solid #ff2473;
+  background: white; }
 
 .header-buttons {
   justify-content: center;
