@@ -1,0 +1,60 @@
+.section-saas {
+  padding-right: 140px;
+  padding-left: 140px;
+  text-align: center;
+  margin-top: 100px;
+}
+.intro-sass-header {
+  font-size: 48.1304px;
+  color: #23293d;
+}
+.intro-sass-subheader {
+  margin-top: 32px;
+  margin-bottom: 36px;
+  font-size: 24.0652px;
+  color: black;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.items {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 156px;
+  justify-content: center;
+}
+.item {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+.logo-text {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  max-width: 360px;
+  text-align: center;
+  color: #000000;
+}
+.logo-text-white {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  max-width: 360px;
+  text-align: center;
+  color: white;
+  &_small {
+    margin-top: 32px;
+    font-weight: 200;
+    font-size: 32.087px;
+    text-align: center;
+  }
+}
+.radiant-container {
+  background: linear-gradient(96.95deg, #ff2473 0.26%, #de063a 72.22%);
+  width: 1264px;
+  height: 474px;
+  padding: 43px;
+  border-radius: 20px;
+  margin: 0 auto;
+}
