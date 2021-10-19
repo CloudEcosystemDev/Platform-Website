@@ -126,7 +126,8 @@ a:hover {
   width: 100%;
   display: flex;
   flex-direction: row;
-  margin-bottom: 156px;
+  margin-bottom: 126px;
+  padding: 30px;
   justify-content: center; }
 
 .item {
@@ -164,7 +165,8 @@ a:hover {
 .section-Icenter {
   padding-right: 88px;
   padding-left: 88px;
-  text-align: center; }
+  text-align: center;
+  margin-top: 100px; }
 
 .item-steps {
   margin-top: 110px;
@@ -207,7 +209,8 @@ a:hover {
 .section-growing {
   text-align: center;
   padding-right: 50px;
-  padding-left: 50px; }
+  padding-left: 50px;
+  margin-top: 180px; }
 
 .growing-header {
   font-size: 48.1304px;
@@ -218,7 +221,10 @@ a:hover {
   margin-top: 50px;
   justify-content: space-around;
   height: 500px;
-  flex-direction: column; }
+  flex-direction: column;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto; }
 
 .comp-row {
   display: flex;
@@ -234,7 +240,8 @@ a:hover {
   padding-right: 90px;
   padding-left: 90px;
   justify-content: center;
-  text-align: center; }
+  text-align: center;
+  margin-top: 150px; }
 
 .today-header {
   font-size: 48px;
@@ -259,7 +266,8 @@ a:hover {
 .card-items {
   width: 100%;
   justify-content: space-evenly;
-  display: flex; }
+  display: flex;
+  margin-top: 30px; }
 
 .medium-line {
   font-weight: 600;
