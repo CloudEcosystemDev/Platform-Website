@@ -40,7 +40,7 @@
 }
 .logo-text-white {
   font-weight: 600;
-  font-size: 24px;
+  font-size: 48px;
   line-height: 36px;
   color: white;
   &_small {
@@ -48,11 +48,11 @@
     font-weight: 200;
     font-size: 32.087px;
     text-align: center;
+    color: #fff;
   }
 }
 .radiant-container {
   background: linear-gradient(96.95deg, #ff2473 0.26%, #de063a 72.22%);
-  width: 1264px;
   height: 474px;
   padding: 43px;
   border-radius: 20px;
