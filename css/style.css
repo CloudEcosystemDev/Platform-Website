@@ -432,3 +432,7 @@ button.dark-text-cont {
   float: right;
   align-items: center;
   margin-left: auto; }
+
+.imprint div {
+    padding-top: 20px;
+ }
