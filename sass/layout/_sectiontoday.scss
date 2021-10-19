@@ -81,6 +81,7 @@
 .question-text {
   font-size: 32px;
   color: #000;
+  margin-left: 15px;
 }
 .questions-container {
   margin-top: 70px;
@@ -100,9 +101,7 @@
   cursor: pointer;
   transition: 0.4s;
 }
-.question-text {
-  margin-left: 5px;
-}
+
 .active,
 .question:hover {
   background-color: #ccc;

@@ -4,16 +4,14 @@ function accord(item) {
   for (i = 0; i < acc.length; i++) {
     if (item === `${i}`) {
       var panel = document.getElementById(`p${i}`);
+      var vec = document.getElementById(`v${i}`);
       if (panel.style.display === "block") {
-        console.log("clicked blocked");
-
+        vec.style.transform = "rotate(0deg)";
         panel.style.display = "none";
       } else {
-        console.log("clicked no");
-
+        vec.style.transform = "rotate(90deg)";
         panel.style.display = "block";
       }
     }
-    // });
   }
 }
