@@ -402,6 +402,7 @@ a:hover {
 .question {
   display: flex;
   font-size: 24px;
+  cursor: pointer;
 }
 
 .question-text {
