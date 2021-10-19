@@ -382,6 +382,15 @@ a:hover {
 .control-image {
   margin: auto; }
 
+.imprint {
+  padding-top: 50px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 150px; }
+
+.imprint div {
+  padding-top: 30px; }
+
 button {
   border: 1px solid transparent;
   outline: 0;
@@ -445,7 +454,3 @@ button.dark-text-cont {
   float: right;
   align-items: center;
   margin-left: auto; }
-
-.imprint div {
-    padding-top: 20px;
- }
