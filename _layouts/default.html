@@ -19,21 +19,10 @@
   </head>
 
   <body>
-    <header class="header">
-      <div>
-        <embed src="logos/oihheaderlogo.svg" alt="oih logo" />
-      </div>
-      <div class="header-buttons">
-        <a href="https://app.openintegrationhub.com/login"
-          ><button class="secondary">Login</button></a
-        >
-        <a href="https://app.openintegrationhub.com/register"
-          ><button class="primary">Start for free</button></a
-        >
-      </div>
-    </header>
-    {{ content }}
-
+    {% include header.html %}
+    <main>
+      {{ content }}
+    </main>
     {% include footer.html %}
   </body>
 </html>
