@@ -1,7 +1,7 @@
 function accord(item) {
   var acc = document.getElementsByClassName("question");
   var i;
-  for (i = 0; i < acc.length; i++) {
+  for (i = 0; i <= acc.length; i++) {
     if (item === `${i}`) {
       var panel = document.getElementById(`p${i}`);
       var vec = document.getElementById(`v${i}`);
