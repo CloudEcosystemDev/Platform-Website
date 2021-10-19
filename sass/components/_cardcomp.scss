@@ -1,0 +1,26 @@
+.card-comp {
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 9px 1px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  width: 220px;
+  height: 124px;
+}
+.comp-text-header {
+    font-weight: bold;
+font-size: 18px;
+}
+.comp-text-subheader {
+    font-weight: 300;
+    font-size: 14px;
+}
+.comp-text {
+    text-align: initial;
+    margin-left: 10px;
+}
+.comp-image {
+    margin: auto;
+}

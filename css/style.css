@@ -121,6 +121,7 @@ a:hover {
   margin: 0 auto; }
 
 .items {
+  margin-top: 32px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -198,7 +199,14 @@ a:hover {
   color: black; }
 
 .connectors-container {
-  display: flex; }
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-around;
+  height: 500px;
+  display: box;
+  display: -webkit-box;
+  display: -moz-box;
+  box-lines: multiple; }
 
 .section-today {
   padding-right: 90px;
@@ -376,6 +384,32 @@ button.dark-text-cont {
   color: #313a55;
   border: 1px solid #ff2473;
   background: white; }
+
+.card-comp {
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 9px 1px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  width: 220px;
+  height: 124px; }
+
+.comp-text-header {
+  font-weight: bold;
+  font-size: 18px; }
+
+.comp-text-subheader {
+  font-weight: 300;
+  font-size: 14px; }
+
+.comp-text {
+  text-align: initial;
+  margin-left: 10px; }
+
+.comp-image {
+  margin: auto; }
 
 .header-buttons {
   justify-content: center;
