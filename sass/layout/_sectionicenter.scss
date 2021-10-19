@@ -13,6 +13,7 @@
   padding-right: 100px;
   padding-left: 100px;
   color: black;
+  align-items: center;
 }
 .underlined {
   text-decoration: underline;
@@ -26,4 +27,12 @@
 }
 .platform-container {
   margin-top: 54px;
-}
+  max-width: 1000px;
+  height: 650px;
+  justify-content: center;
+  & > img {
+    justify-content: center;
+  border-radius: 20px;
+  height: inherit;
+  width: 100%;  
+}}
