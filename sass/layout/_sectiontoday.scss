@@ -97,7 +97,20 @@
 .question {
   display: flex;
   font-size: 24px;
+  cursor: pointer;
+  transition: 0.4s;
 }
 .question-text {
   margin-left: 5px;
+}
+.active,
+.question:hover {
+  background-color: #ccc;
+}
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
