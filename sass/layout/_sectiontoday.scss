@@ -103,14 +103,14 @@
 .question-text {
   margin-left: 5px;
 }
-.active, .question:hover {
-    background-color: #ccc;
-  }
+.active,
+.question:hover {
+  background-color: #ccc;
+}
 .panel {
-    padding: 0 18px;
-    background-color: white;
-    display: none;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-  }
-    
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
