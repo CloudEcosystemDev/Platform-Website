@@ -426,7 +426,10 @@ a:hover {
   font-weight: normal;
   font-size: 14px;
   overflow: hidden;
-  text-overflow: ellipsis; }
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 90%;
+  height: 100px; }
 
 .control-text {
   margin-left: 5px; }
