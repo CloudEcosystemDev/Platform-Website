@@ -126,7 +126,8 @@ a:hover {
   width: 100%;
   display: flex;
   flex-direction: row;
-  margin-bottom: 156px;
+  margin-bottom: 126px;
+  padding: 30px;
   justify-content: center; }
 
 .item {
@@ -414,10 +415,13 @@ a:hover {
   display: -moz-box;
   display: -ms-flexbox;
   display: -moz-flex;
-  display: -webkit-flex; }
+  display: -webkit-flex;
+  justify-content: space-around; }
 
 .book-demo div {
   padding-top: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
   width: 50%;
   min-width: 400px; }
 
