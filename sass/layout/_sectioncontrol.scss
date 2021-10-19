@@ -50,10 +50,13 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   max-width: 90%;
-  height: 100px;  
+  height: 100px;
   }
 .control-text {
   margin-left: 5px;
+  max-width: 150px;
+  -webkit-line-clamp: 4;
+
 }
 .control-image {
   margin: auto;
