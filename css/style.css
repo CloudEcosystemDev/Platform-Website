@@ -94,7 +94,7 @@ a:hover {
 
 .intro-header {
   font-size: 48.1304px;
-  font-weight: 500;
+  font-style: bold;
   color: #de063a; }
 
 .buttons {
@@ -204,10 +204,17 @@ a:hover {
   margin-top: 50px;
   justify-content: space-around;
   height: 500px;
-  display: box;
-  display: -webkit-box;
-  display: -moz-box;
-  box-lines: multiple; }
+  flex-direction: column; }
+
+.comp-row {
+  display: flex;
+  justify-content: space-around;
+  padding-right: 40px; }
+
+.comp-row-mid {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 40px; }
 
 .section-today {
   padding-right: 90px;
@@ -326,7 +333,15 @@ a:hover {
 .control-container {
   margin-top: 76px;
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: 400px; }
+
+.control-container:last-child {
+  flex-grow: 0.1; }
+
+.control-container > div {
+  width: 30%; }
 
 .control-card {
   padding: 9px;

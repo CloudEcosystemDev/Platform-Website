@@ -12,10 +12,15 @@
   margin-top: 50px;
   justify-content: space-around;
   height: 500px;
-
-  display: box;
-  display: -webkit-box;
-  display: -moz-box;
-  box-lines: multiple;
-
+  flex-direction: column;  
+}
+.comp-row {
+    display: flex;
+    justify-content: space-around;
+    padding-right: 40px;
+}
+.comp-row-mid {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 40px;
 }

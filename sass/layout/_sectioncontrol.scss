@@ -13,8 +13,18 @@
 .control-container {
   margin-top: 76px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-around; 
+  flex-wrap: wrap;
+  height: 400px;
+ 
 }
+.control-container:last-child{
+    flex-grow: 0.1;
+  }
+  
+.control-container > div {
+	width: 30%;
+  }
 .control-card {
   padding: 9px;
   display: flex;
