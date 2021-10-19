@@ -145,18 +145,18 @@ a:hover {
 
 .logo-text-white {
   font-weight: 600;
-  font-size: 24px;
+  font-size: 48px;
   line-height: 36px;
   color: white; }
   .logo-text-white_small {
     margin-top: 32px;
     font-weight: 200;
     font-size: 32.087px;
-    text-align: center; }
+    text-align: center;
+    color: #fff; }
 
 .radiant-container {
   background: linear-gradient(96.95deg, #ff2473 0.26%, #de063a 72.22%);
-  width: 1264px;
   height: 474px;
   padding: 43px;
   border-radius: 20px;
@@ -336,11 +336,13 @@ a:hover {
   color: black; }
 
 .cont-header {
-  font-size: 32px; }
+  font-size: 32px;
+  font-weight: 600; }
 
 .cont-subheader {
   font-size: 24px;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  font-weight: 200; }
 
 .question-text {
   font-size: 32px;
@@ -462,12 +464,12 @@ button {
   outline: 0;
   color: #fff;
   font-weight: 600;
-  font-size: 0.8rem;
+  font-size: 24px;
   width: auto;
   text-align: center;
-  padding: 0.3rem 0.6rem;
+  padding: 0.7rem 1.6rem;
   min-height: 1.8rem;
-  border-radius: 1.25rem;
+  border-radius: 25px;
   justify-content: center; }
 
 button.primary {
