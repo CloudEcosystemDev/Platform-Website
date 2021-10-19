@@ -146,7 +146,6 @@ a:hover {
 .logo-text-white {
   font-weight: 600;
   font-size: 48px;
-  line-height: 36px;
   color: white; }
   .logo-text-white_small {
     margin-top: 32px;
@@ -157,7 +156,6 @@ a:hover {
 
 .radiant-container {
   background: linear-gradient(96.95deg, #ff2473 0.26%, #de063a 72.22%);
-  height: 474px;
   padding: 43px;
   border-radius: 20px;
   margin: 0 auto; }
@@ -310,7 +308,7 @@ a:hover {
 .card-header-dark {
   font-weight: 600;
   font-size: 48px;
-  color: linear-gradient(#ff2473 100%, #30bced 100%); }
+  color: linear-gradient(90deg, #ff2473 50%, #30bced 50%); }
 
 .card-price {
   margin-top: 50px;
@@ -397,7 +395,10 @@ a:hover {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  height: 400px; }
+  height: 400px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto; }
 
 .control-container:last-child {
   flex-grow: 0.1; }
@@ -423,7 +424,9 @@ a:hover {
 
 .control-text-subheader {
   font-weight: normal;
-  font-size: 14px; }
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis; }
 
 .control-text {
   margin-left: 5px; }
@@ -472,7 +475,8 @@ button {
   padding: 0.7rem 1.6rem;
   min-height: 1.8rem;
   border-radius: 25px;
-  justify-content: center; }
+  justify-content: center;
+  cursor: pointer; }
 
 button.primary {
   background: linear-gradient(90.3deg, #ff2473 0.33%, #de063a 99.81%);

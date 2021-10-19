@@ -16,6 +16,9 @@
   justify-content: space-around;
   flex-wrap: wrap;
   height: 400px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .control-container:last-child {
   flex-grow: 0.1;
@@ -43,7 +46,10 @@
 .control-text-subheader {
   font-weight: normal;
   font-size: 14px;
-}
+  overflow: hidden;
+  text-overflow: ellipsis;
+    
+  }
 .control-text {
   margin-left: 5px;
 }
