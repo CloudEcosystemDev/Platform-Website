@@ -1,6 +1,21 @@
 .header-buttons {
-  justify-content: center;
+  justify-content: space-between;
   float: right;
   align-items: center;
   margin-left: auto;
+  & > :first-child {
+    margin-right: 10px;
+  }
+  @media only screen and (max-width: 745px) {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    justify-content: center;
+    & > :first-child {
+      margin-right: 0px;
+    }
+    & > :last-child {
+      margin-top: 10px;
+    }
+  }
 }

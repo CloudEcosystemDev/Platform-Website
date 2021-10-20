@@ -1,6 +1,11 @@
 .section-control {
-  padding: 140px;
+  padding: 0px 140px 0px 140px;
   text-align: center;
+  margin-top: 140px;
+  margin-bottom: 140px;
+  @media only screen and (max-width: 1000px) {
+    padding: 0px 40px 0px 40px;
+  }
 }
 .intro-header-control {
   font-weight: 600;
@@ -12,21 +17,33 @@
 }
 .control-container {
   margin-top: 76px;
-  display: flex;
+  //   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
-  height: 400px;
-  width: 80%;
+  //   flex-wrap: wrap;
+  height: fit-content;
+  width: fit-content;
   margin-left: auto;
   margin-right: auto;
+  display: grid;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  grid-template-columns: auto auto auto;
+  @media only screen and (max-width: 1300px) {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  @media only screen and (max-width: 800px) {
+    display: grid;
+    grid-template-columns: auto;
+    & > :not(:first-child) {
+      margin-top: 10px;
+    }
+  }
 }
 .control-container:last-child {
   flex-grow: 0.1;
 }
 
-.control-container > div {
-  width: 30%;
-}
 .control-card {
   padding: 9px;
   display: flex;
@@ -42,22 +59,20 @@
 .control-text-header {
   font-weight: 600;
   font-size: 18px;
+  display: flex;
 }
 .control-text-subheader {
   font-weight: normal;
   font-size: 14px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  max-width: 90%;
-  height: 100px;
-  }
+  display: flex;
+}
 .control-text {
-  margin-left: 5px;
-  max-width: 150px;
-  -webkit-line-clamp: 4;
-
+  margin-left: 16px;
+  justify-content: flex-start;
+  width: inherit;
 }
 .control-image {
-  margin: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  float: left;
 }
