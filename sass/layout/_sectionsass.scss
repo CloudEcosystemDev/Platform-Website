@@ -6,11 +6,11 @@
   @media only screen and (max-width: 800px) {
     padding-right: 44px;
     padding-left: 44px;
-}
+  }
   @media only screen and (max-width: 620px) {
     padding-right: 22px;
     padding-left: 22px;
-}
+  }
 }
 .intro-sass-header {
   font-size: 48.1304px;
@@ -38,9 +38,9 @@
     padding: 10px;
     align-items: center;
     & > :not(:first-child) {
-        margin-top: 10px;
+      margin-top: 10px;
     }
-}
+  }
 }
 .item {
   display: flex;
@@ -76,6 +76,5 @@
 
   @media only screen and (max-width: 800px) {
     width: auto;
-    
-}
+  }
 }

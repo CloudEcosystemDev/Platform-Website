@@ -4,6 +4,14 @@
   justify-content: center;
   text-align: center;
   margin-top: 150px;
+  @media only screen and (max-width: 800px) {
+    padding-right: 44px;
+    padding-left: 44px;
+  }
+  @media only screen and (max-width: 620px) {
+    padding-right: 22px;
+    padding-left: 22px;
+  }
 }
 .today-header {
   font-size: 48px;
@@ -30,17 +38,36 @@
   margin-left: auto;
   margin-right: auto;
   justify-content: space-evenly;
-  display: flex;
+  display: grid;
   margin-top: 30px;
-  @media only screen and (max-width: 745px) {
-    height: fit-content;
-    align-items: center;  
-    display: flex;
-    flex-direction: column;
-    & > :not(:first-child) {
-        margin-top: 10px;
-    } 
+  grid-template-columns: auto auto auto;
+
+  @media only screen and (max-width: 1400px) {
+    grid-template-columns: auto auto;
+    & > :last-child {
+      justify-self: center;
+      grid-column: span 2;
+      margin-top: 15px;
     }
+  }
+  @media only screen and (max-width: 1100px) {
+    grid-template-columns: auto;
+    & > :last-child {
+      justify-self: center;
+      grid-column: span 2;
+      margin-top: 15px;
+    }
+  }
+  @media only screen and (max-width: 820px) {
+    grid-template-columns: auto;
+    & > :first-child {
+        margin-bottom: 15px;
+    }
+    & > :last-child {
+      grid-column: span 1;
+      margin-top: 15px;
+    }
+  }
 }
 .medium-line {
   font-weight: 600;
@@ -56,7 +83,7 @@
 .card-header-dark {
   font-weight: 600;
   font-size: 48px;
-  color: linear-gradient(90deg,#ff2473 50%, #30bced 50%);
+  color: linear-gradient(90deg, #ff2473 50%, #30bced 50%);
 }
 
 .card-price {

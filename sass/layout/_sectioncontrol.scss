@@ -5,7 +5,7 @@
   margin-bottom: 140px;
   @media only screen and (max-width: 1000px) {
     padding: 0px 40px 0px 40px;
-    }
+  }
 }
 .intro-header-control {
   font-weight: 600;
@@ -17,9 +17,9 @@
 }
 .control-container {
   margin-top: 76px;
-//   display: flex;
-   justify-content: space-around;
-//   flex-wrap: wrap;
+  //   display: flex;
+  justify-content: space-around;
+  //   flex-wrap: wrap;
   height: fit-content;
   width: fit-content;
   margin-left: auto;
@@ -31,14 +31,14 @@
   @media only screen and (max-width: 1300px) {
     display: grid;
     grid-template-columns: auto auto;
-    }
+  }
   @media only screen and (max-width: 800px) {
     display: grid;
     grid-template-columns: auto;
     & > :not(:first-child) {
-        margin-top: 10px;
-    } 
+      margin-top: 10px;
     }
+  }
 }
 .control-container:last-child {
   flex-grow: 0.1;
@@ -60,21 +60,19 @@
   font-weight: 600;
   font-size: 18px;
   display: flex;
-
 }
 .control-text-subheader {
   font-weight: normal;
   font-size: 14px;
   display: flex;
-
-  }
+}
 .control-text {
   margin-left: 16px;
   justify-content: flex-start;
-  width: inherit;  
+  width: inherit;
 }
 .control-image {
-    margin-top: auto;
-    margin-bottom: auto;  
-    float: left;
+  margin-top: auto;
+  margin-bottom: auto;
+  float: left;
 }
