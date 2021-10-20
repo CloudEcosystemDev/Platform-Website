@@ -3,6 +3,14 @@
   padding-left: 140px;
   text-align: center;
   margin-top: 200px;
+  @media only screen and (max-width: 800px) {
+    padding-right: 44px;
+    padding-left: 44px;
+}
+  @media only screen and (max-width: 620px) {
+    padding-right: 22px;
+    padding-left: 22px;
+}
 }
 .intro-sass-header {
   font-size: 48.1304px;
@@ -24,6 +32,15 @@
   margin-bottom: 126px;
   padding: 30px;
   justify-content: center;
+  @media only screen and (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    & > :not(:first-child) {
+        margin-top: 10px;
+    }
+}
 }
 .item {
   display: flex;
@@ -55,4 +72,10 @@
   padding: 43px;
   border-radius: 20px;
   margin: 0 auto;
+  width: auto;
+
+  @media only screen and (max-width: 800px) {
+    width: auto;
+    
+}
 }

@@ -1,9 +1,14 @@
 .header {
-  height: 80px;
+  padding: 20px 50px 17px 50px;
   position: relative;
   background-color: #233046;
-  padding-right: 50px;
-  padding-left: 50px;
   display: flex;
   align-items: center;
+  @media only screen and (max-width: 745px) {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    
+  }
 }
+

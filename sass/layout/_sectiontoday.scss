@@ -32,6 +32,15 @@
   justify-content: space-evenly;
   display: flex;
   margin-top: 30px;
+  @media only screen and (max-width: 745px) {
+    height: fit-content;
+    align-items: center;  
+    display: flex;
+    flex-direction: column;
+    & > :not(:first-child) {
+        margin-top: 10px;
+    } 
+    }
 }
 .medium-line {
   font-weight: 600;

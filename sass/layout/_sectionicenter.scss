@@ -3,6 +3,14 @@
   padding-left: 88px;
   text-align: center;
   margin-top: 180px;
+  @media only screen and (max-width: 800px) {
+    padding-right: 44px;
+    padding-left: 44px;
+}
+@media only screen and (max-width: 620px) {
+    padding-right: 22px;
+    padding-left: 22px;
+}
 }
 .intro-header-center {
   font-size: 48px;
@@ -13,16 +21,40 @@
   margin-top: 110px;
   display: flex;
   justify-content: center;
+  max-width: 1088px;
+  margin-left: auto;
+  margin-right: auto;
+  @media only screen and (max-width: 800px) {
+    display: flex;
+    max-width: 650px;
+    margin-left: 0;
+    justify-content: center;
+}
+@media only screen and (max-width: 620px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
   & > :first-child {
     padding-left: 0px;
   }
 }
 .item-step {
+  max-width: 280px;  
   display: flex;
   padding-left: 100px;
   color: black;
   align-items: center;
   cursor: pointer;
+  @media only screen and (max-width: 800px) {
+    display: flex;
+    padding-left: 10px;
+}
+@media only screen and (max-width: 620px) {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+}
 }
 .active-step {
   color: #de063a;
@@ -31,9 +63,23 @@
   text-decoration: underline;
   padding-right: 20px;
   padding-left: 20px;
+  @media only screen and (max-width: 820px) {
+    padding-right: 0px;
+    padding-left: 10px;
+}
+  @media only screen and (max-width: 620px) {
+    padding-right: 0px;
+    padding-left: 0px;
+}
 }
 .vector {
-  margin-left: 100px;
+  margin-left: 50px;
+  @media only screen and (max-width: 820px) {
+    margin-left: 0px;
+    }
+  @media only screen and (max-width: 620px) {
+    transform: rotate(90deg);
+    }  
 }
 .thin-line {
   border: 1px solid #898989;
