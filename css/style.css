@@ -141,6 +141,24 @@ a:hover {
       .header > :first-child {
         padding-bottom: 10px; } }
 
+.header-buttons {
+  justify-content: space-between;
+  float: right;
+  align-items: center;
+  margin-left: auto; }
+  .header-buttons > :first-child {
+    margin-right: 10px; }
+  @media only screen and (max-width: 745px) {
+    .header-buttons {
+      display: flex;
+      flex-direction: column;
+      margin-left: 0;
+      justify-content: center; }
+      .header-buttons > :first-child {
+        margin-right: 0px; }
+      .header-buttons > :last-child {
+        margin-top: 10px; } }
+
 .section-intro {
   padding-top: 52px;
   padding-bottom: 100px;
@@ -743,21 +761,3 @@ button.dark-text-cont {
 
 .comp-image {
   margin: auto; }
-
-.header-buttons {
-  justify-content: space-between;
-  float: right;
-  align-items: center;
-  margin-left: auto; }
-  .header-buttons > :first-child {
-    margin-right: 10px; }
-  @media only screen and (max-width: 745px) {
-    .header-buttons {
-      display: flex;
-      flex-direction: column;
-      margin-left: 0;
-      justify-content: center; }
-      .header-buttons > :first-child {
-        margin-right: 0px; }
-      .header-buttons > :last-child {
-        margin-top: 10px; } }
