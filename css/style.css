@@ -129,7 +129,9 @@ a:hover {
     .header {
       display: flex;
       flex-direction: column;
-      height: fit-content; } }
+      height: fit-content; }
+      .header > :first-child {
+        padding-bottom: 10px; } }
 
 .section-intro {
   padding-top: 52px;
@@ -153,6 +155,13 @@ a:hover {
 
 .buttons {
   margin-top: 72px; }
+  @media only screen and (max-width: 745px) {
+    .buttons {
+      height: 130px;
+      display: flex;
+      flex-direction: column; }
+      .buttons > :last-child {
+        margin-top: auto; } }
 
 .video-container {
   margin-top: 60px; }
@@ -182,6 +191,11 @@ a:hover {
   color: black;
   max-width: 1000px;
   margin: 0 auto; }
+
+.img-triplet {
+  margin: 0 auto;
+  width: 90px;
+  height: 90px; }
 
 .items {
   margin-top: 32px;
@@ -293,10 +307,12 @@ a:hover {
       flex-direction: column; } }
 
 .vec-container {
-  align-self: center; }
+  align-self: center;
+  margin-right: 15px; }
   @media only screen and (max-width: 620px) {
     .vec-container {
-      transform: rotate(90deg); } }
+      transform: rotate(90deg);
+      margin-right: 0px; } }
 
 .active-step {
   color: #de063a; }

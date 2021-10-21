@@ -62,8 +62,10 @@
 }
 .vec-container {
   align-self: center;
+  margin-right: 15px;
   @media only screen and (max-width: 620px) {
     transform: rotate(90deg);
+    margin-right: 0px;
   }
 }
 .active-step {
