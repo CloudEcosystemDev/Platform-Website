@@ -44,6 +44,11 @@
 .sub-col {
   display: flex;
   flex-direction: column;
+  @media only screen and (max-width: 800px) {
+   & > :first-child {
+      margin-bottom: 10px;
+    }
+  }
 }
 .left-ft-down {
   justify-content: center;
@@ -55,9 +60,14 @@
   @media only screen and (max-width: 800px) {
     align-items: center;
     margin-left: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   @media only screen and (max-width: 620px) {
     align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
   }
 }
 .small-header {
@@ -83,6 +93,7 @@
   flex-direction: column;
   @media only screen and (max-width: 800px) {
     width: 100%;
+    margin-bottom: 10px;
   }
 }
 a {

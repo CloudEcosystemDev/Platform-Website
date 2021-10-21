@@ -69,6 +69,9 @@ body {
 .sub-col {
   display: flex;
   flex-direction: column; }
+  @media only screen and (max-width: 800px) {
+    .sub-col > :first-child {
+      margin-bottom: 10px; } }
 
 .left-ft-down {
   justify-content: center;
@@ -80,10 +83,14 @@ body {
   @media only screen and (max-width: 800px) {
     .right-img {
       align-items: center;
-      margin-left: 0px; } }
+      margin-left: 0px;
+      margin-top: 10px;
+      margin-bottom: 10px; } }
   @media only screen and (max-width: 620px) {
     .right-img {
-      align-items: center; } }
+      align-items: center;
+      margin-top: 10px;
+      margin-bottom: 10px; } }
 
 .small-header {
   font-size: 18px;
@@ -108,7 +115,8 @@ body {
   flex-direction: column; }
   @media only screen and (max-width: 800px) {
     .left-list {
-      width: 100%; } }
+      width: 100%;
+      margin-bottom: 10px; } }
 
 a {
   text-decoration: none;
