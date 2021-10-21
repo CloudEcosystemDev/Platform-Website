@@ -6,13 +6,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
   }
   @media only screen and (max-width: 620px) {
     display: flex;
     flex-direction: column;
     align-items: center;
-
   }
 }
 .col {
@@ -27,7 +25,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
   }
 }
 .row {
@@ -37,18 +34,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
   }
   @media only screen and (max-width: 620px) {
     display: flex;
     flex-direction: column;
     align-items: center;
-
   }
 }
 .sub-col {
   display: flex;
   flex-direction: column;
+  @media only screen and (max-width: 800px) {
+   & > :first-child {
+      margin-bottom: 10px;
+    }
+  }
 }
 .left-ft-down {
   justify-content: center;
@@ -56,13 +56,18 @@
   color: white;
 }
 .right-img {
-  margin-left: 88px;  
+  margin-left: 88px;
   @media only screen and (max-width: 800px) {
     align-items: center;
     margin-left: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   @media only screen and (max-width: 620px) {
     align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
   }
 }
 .small-header {
@@ -80,7 +85,6 @@
   flex-direction: column;
   @media only screen and (max-width: 800px) {
     width: 100%;
-
   }
 }
 .left-list {
@@ -89,6 +93,7 @@
   flex-direction: column;
   @media only screen and (max-width: 800px) {
     width: 100%;
+    margin-bottom: 10px;
   }
 }
 a {

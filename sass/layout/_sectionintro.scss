@@ -20,6 +20,14 @@
 }
 .buttons {
   margin-top: 72px;
+  @media only screen and (max-width: 745px) {
+    height: 130px;
+    display: flex;
+    flex-direction: column;    
+    & > :last-child {
+      margin-top: auto;
+    } 
+  }
 }
 .video-container {
   margin-top: 60px;
