@@ -23,10 +23,10 @@
   @media only screen and (max-width: 745px) {
     height: 130px;
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
     & > :last-child {
       margin-top: auto;
-    } 
+    }
   }
 }
 .video-container {
