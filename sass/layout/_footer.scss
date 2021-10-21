@@ -6,13 +6,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
   }
   @media only screen and (max-width: 620px) {
     display: flex;
     flex-direction: column;
     align-items: center;
-
   }
 }
 .col {
@@ -27,7 +25,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
   }
 }
 .row {
@@ -37,13 +34,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
   }
   @media only screen and (max-width: 620px) {
     display: flex;
     flex-direction: column;
     align-items: center;
-
   }
 }
 .sub-col {
@@ -56,7 +51,7 @@
   color: white;
 }
 .right-img {
-  margin-left: 88px;  
+  margin-left: 88px;
   @media only screen and (max-width: 800px) {
     align-items: center;
     margin-left: 0px;
@@ -80,7 +75,6 @@
   flex-direction: column;
   @media only screen and (max-width: 800px) {
     width: 100%;
-
   }
 }
 .left-list {

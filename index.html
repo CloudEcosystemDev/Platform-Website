@@ -73,22 +73,25 @@ layout: default
   </div>
   <div class="item-steps">
     <div class="item-step active-step" id="s1" onclick="selectGif(1)">
-      {% comment %} <embed src="logos/step1.svg" alt="oih logo" /> {% endcomment
-      %}
       <div class="numberCircle active-circle" id="vec1">1</div>
       <div class="underlined">Choose Connector</div>
-      <embed class="vector" src="logos/vector.svg" alt="oih logo" />
     </div>
-    <div class="item-step" id="s2" onclick="selectGif(2)">
-      {% comment %} <embed src="logos/step2.svg" alt="oih logo" /> {% endcomment
-      %}
+      <div class="vec-container">
+    <img
+      src="logos/vector.svg"
+      alt="OIH platform paradigm"
+    />
+    </div>    <div class="item-step" id="s2" onclick="selectGif(2)">
       <div class="numberCircle" id="vec2">2</div>
       <div class="underlined">Create Template</div>
-      <embed class="vector" src="logos/vector.svg" alt="oih logo" />
+    </div>
+    <div class="vec-container">
+    <img
+      src="logos/vector.svg"
+      alt="OIH platform paradigm"
+    />
     </div>
     <div class="item-step" id="s3" onclick="selectGif(3)">
-      {% comment %} <embed src="logos/step3.svg" alt="oih logo" /> {% endcomment
-      %}
       <div class="numberCircle" id="vec3">3</div>
       <div class="underlined">Publish Integration</div>
     </div>
@@ -100,7 +103,7 @@ layout: default
       src="assets/chooseconnector.gif"
       alt="OIH platform paradigm"
     />
-  </div>
+  </div> 
 </section>
 <a name="connectors"></a>
 <section class="section-growing">
@@ -162,11 +165,6 @@ layout: default
           <div class="comp-text-subheader">Online taks manager</div>
         </div>
       </div>
-      {% comment %}
-    </div>
-    {% endcomment %} {% comment %}
-    <div class="comp-row-mid">
-      {% endcomment %}
       <div class="card-comp">
         <div class="comp-image">
           <embed src="logos/components/Stripe.svg" alt="oih logo" />
@@ -216,11 +214,6 @@ layout: default
           <div class="comp-text-subheader">Business Management System</div>
         </div>
       </div>
-      {% comment %}
-    </div>
-    {% endcomment %} {% comment %}
-    <div class="comp-row">
-      {% endcomment %}
       <div class="card-comp">
         <div class="comp-image">
           <embed src="logos/components/SalesForce.svg" alt="oih logo" />

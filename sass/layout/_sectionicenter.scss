@@ -3,6 +3,8 @@
   padding-left: 88px;
   text-align: center;
   margin-top: 180px;
+  display: flex;
+  flex-direction:column;
   @media only screen and (max-width: 800px) {
     padding-right: 44px;
     padding-left: 44px;
@@ -18,22 +20,27 @@
   color: #000;
 }
 .item-steps {
-  margin-top: 110px;
   display: flex;
-  justify-content: center;
+  margin-top: 110px;
+  justify-content: space-evenly;
   max-width: 1088px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
+
   @media only screen and (max-width: 800px) {
     display: flex;
     max-width: 650px;
     margin-left: 0;
-    justify-content: center;
+    justify-content: space-evenly;
+
   }
   @media only screen and (max-width: 620px) {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
+
   }
   & > :first-child {
     padding-left: 0px;
@@ -42,18 +49,21 @@
 .item-step {
   max-width: 280px;
   display: flex;
-  padding-left: 100px;
   color: black;
   align-items: center;
   cursor: pointer;
   @media only screen and (max-width: 800px) {
     display: flex;
-    padding-left: 10px;
   }
   @media only screen and (max-width: 620px) {
     display: flex;
     flex-direction: column;
-    padding-left: 0px;
+  }
+}
+.vec-container {
+  align-self: center;
+  @media only screen and (max-width: 620px) {
+    transform: rotate(90deg);
   }
 }
 .active-step {
