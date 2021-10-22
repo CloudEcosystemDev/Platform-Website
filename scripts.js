@@ -35,20 +35,28 @@ var x, i, j, l, ll, selElmnt, a, b, c;
 window.addEventListener("load", function (event) {
   /*look for any elements with the class "custom-select":*/
   x = document.getElementsByClassName("custom-select");
-  l = x.length;  
-  for (i = 0; i < document.getElementsByClassName("custom-select").length; i++) {
-
+  l = x.length;
+  for (
+    i = 0;
+    i < document.getElementsByClassName("custom-select").length;
+    i++
+  ) {
+    let newInd = i;
     selElmnt = x[i].getElementsByTagName("select")[0];
     ll = selElmnt.length;
     /*for each element, create a new DIV that will act as the selected item:*/
     a = document.createElement("DIV");
-    i === 0 ? a.setAttribute("class", "select-selected dark-letters") : a.setAttribute("class", "select-selected");
+    i === 0
+      ? a.setAttribute("class", "select-selected dark-letters")
+      : a.setAttribute("class", "select-selected");
     a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
     x[i].appendChild(a);
     /*for each element, create a new DIV that will contain the option list:*/
     b = document.createElement("DIV");
     b.setAttribute("class", "select-items select-hide");
-    i === 0 ? b.setAttribute("class", "select-items select-hide light-background") : b.setAttribute("class", "select-items select-hide");
+    i === 0
+      ? b.setAttribute("class", "select-items select-hide light-background")
+      : b.setAttribute("class", "select-items select-hide");
     for (j = 1; j < ll; j++) {
       /*for each option in the original select element,
     create a new DIV that will act as an option item:*/
@@ -65,6 +73,9 @@ window.addEventListener("load", function (event) {
           if (s.options[i].innerHTML == this.innerHTML) {
             s.selectedIndex = i;
             h.innerHTML = this.innerHTML;
+            console.log("hree a click", s.selectedIndex);
+            console.log("hree a click", h.innerHTML);
+            textChanger(newInd, h.innerHTML);
             y = this.parentNode.getElementsByClassName("same-as-selected");
             yl = y.length;
             for (k = 0; k < yl; k++) {
@@ -83,6 +94,7 @@ window.addEventListener("load", function (event) {
       /*when the select box is clicked, close any other select boxes,
       and open/close the current select box:*/
       e.stopPropagation();
+      console.log("even", e);
       closeAllSelect(this);
       this.nextSibling.classList.toggle("select-hide");
       this.classList.toggle("select-arrow-active");
@@ -119,3 +131,30 @@ function closeAllSelect(elmnt) {
 /*if the user clicks anywhere outside the select box,
 then close all select boxes:*/
 document.addEventListener("click", closeAllSelect);
+
+let starter = {
+  execsHTML: ["1 Million Executions /mo", "3 Million Executions /mo"],
+  prices: ["400 $ / mo", "1200 $ / mo"],
+};
+let scaler = {
+  execsHTML: ["10 Million Executions /mo", "20 Million Executions /mo"],
+  prices: ["2000 $ / mo", "4000 $ / mo"],
+};
+
+function textChanger(ind, text) {
+  console.log("ind", ind);
+  console.log("text", text);
+  if (ind === 0) {
+    if (text === starter.execsHTML[0]) {
+      document.getElementById("price0").innerHTML = starter.prices[0];
+    } else if (text === starter.execsHTML[1]) {
+      document.getElementById("price0").innerHTML = starter.prices[1];
+    }
+  } else {
+    if (text === scaler.execsHTML[0]) {
+      document.getElementById("price1").innerHTML = scaler.prices[0];
+    } else if (text === scaler.execsHTML[1]) {
+      document.getElementById("price1").innerHTML = scaler.prices[1];
+    }
+  }
+}
