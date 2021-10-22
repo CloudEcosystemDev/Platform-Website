@@ -33,29 +33,22 @@ function selectGif(item) {
 
 var x, i, j, l, ll, selElmnt, a, b, c;
 window.addEventListener("load", function (event) {
-  console.log(document.getElementsByClassName("custom-select").length);
-
   /*look for any elements with the class "custom-select":*/
-  x = document.getElementsByClassName("custom-select")[0];
-  console.log("x", x);
-  l = x.length;
-  console.log("x", l);
+  x = document.getElementsByClassName("custom-select");
+  l = x.length;  
+  for (i = 0; i < document.getElementsByClassName("custom-select").length; i++) {
 
-  for (j = 0; j < l; j++) {
-    let currentSelect = document.getElementById(`sel${j}`);
-    console.log("runned once", currentSelect);
-  }
-  for (i = 0; i < l; i++) {
     selElmnt = x[i].getElementsByTagName("select")[0];
     ll = selElmnt.length;
     /*for each element, create a new DIV that will act as the selected item:*/
     a = document.createElement("DIV");
-    a.setAttribute("class", "select-selected");
+    i === 0 ? a.setAttribute("class", "select-selected dark-letters") : a.setAttribute("class", "select-selected");
     a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
     x[i].appendChild(a);
     /*for each element, create a new DIV that will contain the option list:*/
     b = document.createElement("DIV");
     b.setAttribute("class", "select-items select-hide");
+    i === 0 ? b.setAttribute("class", "select-items select-hide light-background") : b.setAttribute("class", "select-items select-hide");
     for (j = 1; j < ll; j++) {
       /*for each option in the original select element,
     create a new DIV that will act as an option item:*/
