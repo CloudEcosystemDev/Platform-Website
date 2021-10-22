@@ -100,13 +100,14 @@
 }
 .radiant-small-container {
   padding: 30px;
+  max-width: 1264px;
   justify-content: center;
   display: flex;
   flex-direction: column;
   background: linear-gradient(96.95deg, #ff2473 0.26%, #de063a 72.22%);
   color: white;
   border-radius: 20px;
-  margin-top: 30px;
+  margin: 30px auto 0px auto;
 }
 .dark-text-cont {
   width: fit-content;
@@ -128,8 +129,9 @@
   margin-left: 15px;
 }
 .questions-container {
-  margin-top: 70px;
+  max-width: 1264px;
   text-align: initial;
+  margin: 70px auto 0px auto;
 }
 .question-header {
   font-size: 32px;
