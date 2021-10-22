@@ -133,12 +133,12 @@ then close all select boxes:*/
 document.addEventListener("click", closeAllSelect);
 
 let starter = {
-  execsHTML: ["1 Million Executions /mo", "3 Million Executions /mo"],
-  prices: ["400 $ / mo", "1200 $ / mo"],
+  execsHTML: ["0.5 Million Executions /mo","1 Million Executions /mo", "3 Million Executions /mo"],
+  prices: ["299 $ / mo","699 $ / mo", "1499 $ / mo"],
 };
 let scaler = {
-  execsHTML: ["10 Million Executions /mo", "20 Million Executions /mo"],
-  prices: ["2000 $ / mo", "4000 $ / mo"],
+  execsHTML: ["5 Million Executions /mo","10 Million Executions /mo", "20 Million Executions /mo"],
+  prices: ["1599 $ / mo","3599 $ / mo", "5599 $ / mo"],
 };
 
 function textChanger(ind, text) {
@@ -149,12 +149,16 @@ function textChanger(ind, text) {
       document.getElementById("price0").innerHTML = starter.prices[0];
     } else if (text === starter.execsHTML[1]) {
       document.getElementById("price0").innerHTML = starter.prices[1];
+    } else if (text === starter.execsHTML[2]) {
+      document.getElementById("price0").innerHTML = starter.prices[2];
     }
   } else {
     if (text === scaler.execsHTML[0]) {
       document.getElementById("price1").innerHTML = scaler.prices[0];
     } else if (text === scaler.execsHTML[1]) {
       document.getElementById("price1").innerHTML = scaler.prices[1];
+    } else if (text === scaler.execsHTML[2]) {
+      document.getElementById("price1").innerHTML = scaler.prices[2];
     }
   }
 }
