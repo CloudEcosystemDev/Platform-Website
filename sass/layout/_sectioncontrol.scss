@@ -6,6 +6,14 @@
   @media only screen and (max-width: 1000px) {
     padding: 0px 40px 0px 40px;
   }
+  @media only screen and (max-width: 800px) {
+    padding-right: 44px;
+    padding-left: 44px;
+  }
+  @media only screen and (max-width: 620px) {
+    padding-right: 22px;
+    padding-left: 22px;
+  }
 }
 .intro-header-control {
   font-weight: 600;
@@ -17,9 +25,7 @@
 }
 .control-container {
   margin-top: 76px;
-  //   display: flex;
   justify-content: space-around;
-  //   flex-wrap: wrap;
   height: fit-content;
   width: fit-content;
   margin-left: auto;
@@ -47,7 +53,7 @@
 .control-card {
   padding: 9px;
   display: flex;
-  width: 360px;
+  max-width: 360px;
   height: 156px;
   background: #ffffff;
   border: 1px solid rgba(228, 225, 225, 0.5);
@@ -55,6 +61,9 @@
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   text-align: center;
+  @media only screen and (max-width: 800px) {
+    height: fit-content;
+  }
 }
 .control-text-header {
   font-weight: 600;

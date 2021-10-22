@@ -69,6 +69,9 @@ body {
 .sub-col {
   display: flex;
   flex-direction: column; }
+  @media only screen and (max-width: 800px) {
+    .sub-col > :first-child {
+      margin-bottom: 10px; } }
 
 .left-ft-down {
   justify-content: center;
@@ -80,10 +83,14 @@ body {
   @media only screen and (max-width: 800px) {
     .right-img {
       align-items: center;
-      margin-left: 0px; } }
+      margin-left: 0px;
+      margin-top: 10px;
+      margin-bottom: 10px; } }
   @media only screen and (max-width: 620px) {
     .right-img {
-      align-items: center; } }
+      align-items: center;
+      margin-top: 10px;
+      margin-bottom: 10px; } }
 
 .small-header {
   font-size: 18px;
@@ -108,7 +115,8 @@ body {
   flex-direction: column; }
   @media only screen and (max-width: 800px) {
     .left-list {
-      width: 100%; } }
+      width: 100%;
+      margin-bottom: 10px; } }
 
 a {
   text-decoration: none;
@@ -125,11 +133,31 @@ a:hover {
   background-color: #233046;
   display: flex;
   align-items: center; }
-  @media only screen and (max-width: 745px) {
+  @media only screen and (max-width: 755px) {
     .header {
       display: flex;
       flex-direction: column;
-      height: fit-content; } }
+      height: fit-content; }
+      .header > :first-child {
+        padding-bottom: 10px; } }
+
+.header-buttons {
+  justify-content: space-between;
+  float: right;
+  align-items: center;
+  margin-left: auto; }
+  .header-buttons > :first-child {
+    margin-right: 10px; }
+  @media only screen and (max-width: 755px) {
+    .header-buttons {
+      display: flex;
+      flex-direction: column;
+      margin-left: 0;
+      justify-content: center; }
+      .header-buttons > :first-child {
+        margin-right: 0px; }
+      .header-buttons > :last-child {
+        margin-top: 10px; } }
 
 .section-intro {
   padding-top: 52px;
@@ -443,7 +471,7 @@ a:hover {
 
 .card-item {
   height: 784px;
-  width: 380px;
+  max-width: 380px;
   border: 1px solid #ff2473;
   padding: 30px;
   border-radius: 20px; }
@@ -451,7 +479,7 @@ a:hover {
 .card-item-dark {
   background: linear-gradient(162.37deg, #313a55 9.74%, #23293d 100%);
   height: 784px;
-  width: 380px;
+  max-width: 380px;
   border-radius: 20px;
   color: white;
   padding: 30px; }
@@ -480,7 +508,9 @@ a:hover {
         margin-top: 15px; } }
   @media only screen and (max-width: 820px) {
     .card-items {
-      grid-template-columns: auto; }
+      grid-template-columns: auto;
+      font-size: 75%;
+      width: fit-content; }
       .card-items > :first-child {
         margin-bottom: 15px; }
       .card-items > :last-child {
@@ -558,7 +588,11 @@ a:hover {
   display: flex;
   font-size: 24px;
   cursor: pointer;
-  transition: 0.4s; }
+  transition: 0.4s;
+  align-items: center; }
+  .question > img {
+    height: 16px;
+    width: 8px; }
 
 .panel {
   padding: 0 18px;
@@ -566,6 +600,21 @@ a:hover {
   display: none;
   overflow: hidden;
   transition: max-height 0.2s ease-out; }
+
+.executions {
+  font-weight: 600;
+  font-size: 14px;
+  color: #898989; }
+
+.small-line {
+  margin-top: 28px; }
+
+.individual-text {
+  font-weight: 600;
+  font-size: 24px;
+  color: #000;
+  margin-top: 40px;
+  margin-bottom: 2px; }
 
 .section-control {
   padding: 0px 140px 0px 140px;
@@ -575,6 +624,14 @@ a:hover {
   @media only screen and (max-width: 1000px) {
     .section-control {
       padding: 0px 40px 0px 40px; } }
+  @media only screen and (max-width: 800px) {
+    .section-control {
+      padding-right: 44px;
+      padding-left: 44px; } }
+  @media only screen and (max-width: 620px) {
+    .section-control {
+      padding-right: 22px;
+      padding-left: 22px; } }
 
 .intro-header-control {
   font-weight: 600;
@@ -612,7 +669,7 @@ a:hover {
 .control-card {
   padding: 9px;
   display: flex;
-  width: 360px;
+  max-width: 360px;
   height: 156px;
   background: #ffffff;
   border: 1px solid rgba(228, 225, 225, 0.5);
@@ -620,6 +677,9 @@ a:hover {
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   text-align: center; }
+  @media only screen and (max-width: 800px) {
+    .control-card {
+      height: fit-content; } }
 
 .control-text-header {
   font-weight: 600;
@@ -704,6 +764,70 @@ button.dark-text-cont {
   border: 1px solid #ff2473;
   background: white; }
 
+.custom-select {
+  position: relative;
+  font-family: Arial;
+  background: #EAF2F4;
+  border: 1px solid #B8D0D9;
+  box-sizing: border-box;
+  border-radius: 10px;
+  height: 36px;
+  margin-top: 34px;
+  margin-bottom: 7px; }
+
+.dark {
+  background: #313A55;
+  border: 1px solid #30BCED; }
+
+.custom-select select {
+  display: none;
+  /*hide original SELECT element:*/ }
+
+.select-selected {
+  display: flex;
+  padding-left: 10px; }
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent; }
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px; }
+
+/*style the items (options), including the selected item:*/
+.select-items div, .select-selected {
+  color: #fff;
+  border: 1px solid transparent;
+  cursor: pointer;
+  user-select: none; }
+
+.dark-letters {
+  color: #000000; }
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: #313A55;
+  border: 1px solid #30BCED;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  border-radius: 5px; }
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none; }
+
 .card-comp {
   background: #ffffff;
   border: 1px solid #ffffff;
@@ -729,21 +853,3 @@ button.dark-text-cont {
 
 .comp-image {
   margin: auto; }
-
-.header-buttons {
-  justify-content: space-between;
-  float: right;
-  align-items: center;
-  margin-left: auto; }
-  .header-buttons > :first-child {
-    margin-right: 10px; }
-  @media only screen and (max-width: 745px) {
-    .header-buttons {
-      display: flex;
-      flex-direction: column;
-      margin-left: 0;
-      justify-content: center; }
-      .header-buttons > :first-child {
-        margin-right: 0px; }
-      .header-buttons > :last-child {
-        margin-top: 10px; } }
