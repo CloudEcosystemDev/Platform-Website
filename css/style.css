@@ -496,6 +496,10 @@ a:hover {
   color: white;
   padding: 30px; }
 
+@media only screen and (max-width: 400px) {
+  .top-marg {
+    margin-top: 50px; } }
+
 .card-items {
   max-width: 1244px;
   margin-left: auto;
