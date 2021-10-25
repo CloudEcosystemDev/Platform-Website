@@ -38,6 +38,12 @@
     grid-template-columns: auto;
   }
 }
+.text {
+  max-width: 1264px;
+  margin: 0 auto;
+  font-weight: 200;
+  font-size: 24px;
+}
 .comp-row-mid {
   display: flex;
   justify-content: space-around;

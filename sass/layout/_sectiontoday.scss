@@ -85,7 +85,11 @@
 .card-header-dark {
   font-weight: 600;
   font-size: 48px;
-  color: linear-gradient(90deg, #ff2473 50%, #30bced 50%);
+  background: -webkit-linear-gradient(90deg, #FF2473 39.52%, #30BCED 80.17%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
 }
 
 .card-price {
