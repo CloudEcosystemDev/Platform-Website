@@ -2,7 +2,7 @@
   background-color: #233046;
   width: 100%;
   bottom: 0;
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 1260px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,10 +16,17 @@
 .col {
   width: 50%;
   display: flex;
+  @media only screen and (max-width: 1260px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
   @media only screen and (max-width: 800px) {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
   @media only screen and (max-width: 620px) {
     display: flex;
@@ -30,7 +37,7 @@
 .row {
   display: flex;
   padding: 48px 47px 37px 47px;
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 1260px) {
     display: flex;
     flex-direction: column;
     align-items: center;

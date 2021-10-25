@@ -50,8 +50,10 @@
       src="https://consent.cookiefirst.com/banner.js"
       data-cookiefirst-key="8dce615b-f20b-44b8-bd77-ab18be7a1301"
     ></script>
+    <div style="min-height: 100vh;"> 
     {% include header.html %}
-    <main>{{ content }}</main>
+    <main style="min-height: 100vh;">{{ content }}</main>
     {% include footer.html %}
+  </div>
   </body>
 </html>

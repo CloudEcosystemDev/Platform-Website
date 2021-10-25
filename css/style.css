@@ -27,7 +27,7 @@ body {
   background-color: #233046;
   width: 100%;
   bottom: 0; }
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 1260px) {
     .footer {
       display: flex;
       flex-direction: column;
@@ -41,11 +41,18 @@ body {
 .col {
   width: 50%;
   display: flex; }
+  @media only screen and (max-width: 1260px) {
+    .col {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px; } }
   @media only screen and (max-width: 800px) {
     .col {
       display: flex;
       flex-direction: column;
-      align-items: center; } }
+      align-items: center;
+      justify-content: center; } }
   @media only screen and (max-width: 620px) {
     .col {
       display: flex;
@@ -55,7 +62,7 @@ body {
 .row {
   display: flex;
   padding: 48px 47px 37px 47px; }
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 1260px) {
     .row {
       display: flex;
       flex-direction: column;
@@ -739,10 +746,12 @@ a:hover {
 .imprint div {
   padding-top: 30px; }
 
+.demo-section {
+  max-width: 1300px;
+  margin: 0 auto; }
+
 .book-demo {
   padding-top: 50px;
-  padding-left: 80px;
-  padding-right: 80px;
   padding-bottom: 150px;
   display: flex;
   display: -webkit-box;
@@ -751,22 +760,26 @@ a:hover {
   display: -moz-flex;
   display: -webkit-flex;
   margin: 0 auto;
-  justify-content: space-around; }
+  justify-content: space-between; }
   .book-demo > .pipedriveWebForms {
     padding-top: 20px; }
     @media only screen and (max-width: 1300px) {
       .book-demo > .pipedriveWebForms {
         align-self: center; } }
+    @media only screen and (max-width: 600px) {
+      .book-demo > .pipedriveWebForms {
+        width: 300px; } }
   @media only screen and (max-width: 1300px) {
     .book-demo {
       display: flex;
       flex-direction: column; } }
 
 .loader-container {
-  height: 694px;
-  justify-content: center;
+  height: 729px;
   display: flex;
-  transition: opacity 1s ease-out; }
+  width: 100%;
+  align-items: center;
+  justify-content: center; }
 
 .loader {
   border: 16px solid #FF2473;
@@ -785,10 +798,13 @@ a:hover {
 .book-demo div {
   margin-left: 10px;
   margin-right: 10px;
-  max-width: 570px; }
+  max-width: 600px; }
   @media only screen and (max-width: 1300px) {
     .book-demo div {
       align-self: center; } }
+  @media only screen and (max-width: 550px) {
+    .book-demo div {
+      height: fit-content; } }
 
 .bullet {
   display: flex;

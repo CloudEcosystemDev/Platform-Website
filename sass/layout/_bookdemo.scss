@@ -1,7 +1,9 @@
+.demo-section {
+  max-width: 1300px;
+  margin: 0 auto;
+}
 .book-demo {
   padding-top: 50px;
-  padding-left: 80px;
-  padding-right: 80px;
   padding-bottom: 150px;
   display: flex;
   display: -webkit-box;
@@ -10,11 +12,14 @@
   display: -moz-flex;
   display: -webkit-flex;
   margin: 0 auto;
-  justify-content: space-around;
+  justify-content: space-between;  
   & > .pipedriveWebForms {
     padding-top: 20px;
     @media only screen and (max-width: 1300px) {
       align-self: center;
+    }
+    @media only screen and (max-width: 600px) {
+      width: 300px;
     }
   }
   @media only screen and (max-width: 1300px) {
@@ -23,10 +28,11 @@
   }
 }
 .loader-container {
-  height: 694px;
-  justify-content: center;
+  height: 729px;
   display: flex;
-  transition: opacity 1s ease-out;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 .loader {
   border: 16px solid #FF2473; 
@@ -45,9 +51,12 @@
 .book-demo div {
   margin-left: 10px;
   margin-right: 10px;
-  max-width: 570px;
+  max-width: 600px;
   @media only screen and (max-width: 1300px) {
     align-self: center;
+  }
+  @media only screen and (max-width: 550px) {
+    height: fit-content;
   }
 }
 .bullet {

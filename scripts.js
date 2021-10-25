@@ -179,6 +179,7 @@ if(window.location.href.includes("/book-demo")){
     setTimeout(function(){
       document.querySelector(".loader-container").setAttribute("style", "display: none;"); 
       document.querySelector(".pipedriveWebForms").setAttribute("style", "display: flex;");
+      document.getElementById("app").setAttribute("style", "width: flex; margin: 0 auto;");
      }, 2000);
     })
   }
