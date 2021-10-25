@@ -133,12 +133,20 @@ then close all select boxes:*/
 document.addEventListener("click", closeAllSelect);
 
 let starter = {
-  execsHTML: ["0.5 Million Executions /mo","1 Million Executions /mo", "3 Million Executions /mo"],
-  prices: ["299 $ / mo","699 $ / mo", "1499 $ / mo"],
+  execsHTML: [
+    "0.5 Million Executions /mo",
+    "1 Million Executions /mo",
+    "3 Million Executions /mo",
+  ],
+  prices: ["299 $ / mo", "699 $ / mo", "1499 $ / mo"],
 };
 let scaler = {
-  execsHTML: ["5 Million Executions /mo","10 Million Executions /mo", "20 Million Executions /mo"],
-  prices: ["1599 $ / mo","3599 $ / mo", "5599 $ / mo"],
+  execsHTML: [
+    "5 Million Executions /mo",
+    "10 Million Executions /mo",
+    "20 Million Executions /mo",
+  ],
+  prices: ["1599 $ / mo", "3599 $ / mo", "5599 $ / mo"],
 };
 
 function textChanger(ind, text) {
