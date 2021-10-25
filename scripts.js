@@ -170,3 +170,17 @@ function textChanger(ind, text) {
     }
   }
 }
+
+// console.log("hre you hae console...",window.location.href)
+
+if(window.location.href.includes("/book-demo")){
+  window.addEventListener("load", function (event) {
+    document.querySelector(".pipedriveWebForms").setAttribute("style", "display: none;");
+    setTimeout(function(){
+      document.querySelector(".loader-container").setAttribute("style", "display: none;"); 
+      document.querySelector(".pipedriveWebForms").setAttribute("style", "display: flex;");
+     }, 2000);
+    })
+  }
+
+
