@@ -4,19 +4,63 @@
   padding-right: 80px;
   padding-bottom: 150px;
   display: flex;
-  flex-wrap: wrap-reverse;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -moz-flex;
   display: -webkit-flex;
+  margin: 0 auto;
   justify-content: space-around;
+  & > .pipedriveWebForms {
+    padding-top: 20px;
+    @media only screen and (max-width: 1300px) {
+      align-self: center;
+    }
+  }
+  @media only screen and (max-width: 1300px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.loader-container {
+  height: 694px;
+  justify-content: center;
+  display: flex;
+  transition: opacity 1s ease-out;
+}
+.loader {
+  border: 16px solid #FF2473; 
+  border-top: 16px solid #DE063A;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 .book-demo div {
-  padding-top: 30px;
   margin-left: 10px;
   margin-right: 10px;
-  width: 50%;
-  min-width: 400px;
+  max-width: 570px;
+  @media only screen and (max-width: 1300px) {
+    align-self: center;
+  }
+}
+.bullet {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  & > :last-child {
+    font-size: 24px;
+  }
+}
+
+.title-header {
+  font-weight: 600;
+  font-size: 48px;
+  margin-bottom: 25px;
 }

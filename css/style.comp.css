@@ -281,7 +281,9 @@ a:hover {
   display: flex;
   max-width: 1264px;
   margin: 180px auto 0px auto;
-  flex-direction: column; }
+  flex-direction: column;
+  padding-right: 60px;
+  padding-left: 60px; }
   @media only screen and (max-width: 800px) {
     .section-Icenter {
       padding-right: 44px;
@@ -375,16 +377,16 @@ a:hover {
 
 .platform-container {
   margin-top: 54px;
-  max-width: 1200px;
+  width: 100%;
   height: 650px;
   margin-left: auto;
   margin-right: auto; }
   @media only screen and (max-width: 1000px) {
     .platform-container {
-      height: 450px; } }
+      height: fit-content; } }
   @media only screen and (max-width: 800px) {
     .platform-container {
-      height: 300px; } }
+      height: fit-content; } }
   .platform-container > img {
     justify-content: center;
     border-radius: 20px;
@@ -494,6 +496,10 @@ a:hover {
   color: white;
   padding: 30px; }
 
+@media only screen and (max-width: 400px) {
+  .top-marg {
+    margin-top: 50px; } }
+
 .card-items {
   max-width: 1244px;
   margin-left: auto;
@@ -541,7 +547,7 @@ a:hover {
 .card-header-dark {
   font-weight: 600;
   font-size: 48px;
-  background: -webkit-linear-gradient(90deg, #FF2473 39.52%, #30BCED 80.17%);
+  background: -webkit-linear-gradient(90deg, #ff2473 39.52%, #30bced 80.17%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent; }
@@ -739,20 +745,58 @@ a:hover {
   padding-right: 80px;
   padding-bottom: 150px;
   display: flex;
-  flex-wrap: wrap-reverse;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -moz-flex;
   display: -webkit-flex;
+  margin: 0 auto;
   justify-content: space-around; }
+  .book-demo > .pipedriveWebForms {
+    padding-top: 20px; }
+    @media only screen and (max-width: 1300px) {
+      .book-demo > .pipedriveWebForms {
+        align-self: center; } }
+  @media only screen and (max-width: 1300px) {
+    .book-demo {
+      display: flex;
+      flex-direction: column; } }
+
+.loader {
+  border: 16px solid #f3f3f3;
+  /* Light grey */
+  border-top: 16px solid #3498db;
+  /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite; }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
 
 .book-demo div {
-  padding-top: 30px;
   margin-left: 10px;
   margin-right: 10px;
-  width: 50%;
-  min-width: 400px; }
+  max-width: 570px; }
+  @media only screen and (max-width: 1300px) {
+    .book-demo div {
+      align-self: center; } }
+
+.bullet {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px; }
+  .bullet > :last-child {
+    font-size: 24px; }
+
+.title-header {
+  font-weight: 600;
+  font-size: 48px;
+  margin-bottom: 25px; }
 
 button {
   border: 1px solid transparent;
