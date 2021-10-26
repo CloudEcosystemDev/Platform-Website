@@ -1,3 +1,121 @@
 ---
 layout: default
 ---
+<div class="imprint">
+<h1>Open Integration Hub Platform</h1>
+<h1>Beta Test Terms of Service </h1>
+
+<br>
+<br>
+
+<h2> 1.	Scope of the Agreement, Beta Test</h2>
+<br>
+Subject of this agreement is usage of the Open Integration Hub (OIH) Platform during the public beta test. Although the Provider takes reasonable efforts to make the OIH Platform available for use as error-free as possible, it cannot exclude that errors, malfunctions, data loses etc. may occur during the operation or use of the OIH Platform. That does not mean that a bug is a feature, but bugs might exist.
+<br>
+<br>
+<h2> 2.	Definitions</h2>
+<p>For this Agreement and the usage of the OIH Platform the following definitions do apply:</p>
+<br>
+<div class="imprint-list-block">
+    <p><b>Collection</b>: A Collection is a concept to group Flow Templates and can be defined and managed by the User.</p>
+
+    <p><b>Component</b>: A Component is an assortment of functions that allow access to external data sources and the passing of data through the OIH Services. Components can be generic i.e. for a technical stand-ards such as REST, GraphQL or Databases or they can be application specific. </p>
+
+    <p><b>Connector</b>: A Connector is a type of a Component which is dedicated for the communication with another services’ Application Program-ming Interface (API).</p>
+
+    <p><b>Credentials</b>: In order to activate an Integration Flow an End-User needs to grant access according to security mechanism the application chooses, for instance by providing their login information. Cre-dentials are necessary to ensure consent and compliant access to the data. Credentials are stored on the OIH Platform in an encrypted state.</p>
+
+    <p><b>Execution</b>: When running a Flow Instance the Component’s functions are being executed to actually perform actions such as checking for new entries, or retrieving, transforming and passing on data. Each such action is counted as one Execution.</p>   
+
+    <p><b>Flow Template</b>: A Flow Template is a description of an Integration Flow that is created via the Open Integration Hub Platform and can be used to activate pre-defined Integration Flows. An Integration Flow is a set of functions that connect several components with each other and transfer data between the connected data sources.</p>
+
+    <p><b>Flow Instance</b>: A Flow Instance is generated from a Flow Template through the activation by a User or End-User. It is the fully functional description of an Integration Flow, including credentials, variables, and customizations.</p> 
+
+    <p> <b>Flow Execution</b>: A Flow Execution is the technical execution of an Integration Flow. </p>
+
+    <p><b>Integration Function</b>: A function that allows the interaction with external API’s. The core functions are Actions and Triggers, used to retrieve or pass-on data to respective endpoints. </p>
+
+    <p> <b>Mapping</b>: A Mapping is used to transform data from one application’s data schema to another. It is provided by the User in a Flow Template and can sometimes be customized in a Flow Instance.</p>
+
+    <p> <b>Open Integration Hub Framework (OIH Framework)</b>: OIH Framework provides technology, data models and defines standards to enable integration between business applications. The Framework is published as Open Source Software under the Apache 2.0 license and developed by an open source community.</p>
+
+    <p><b>Open Integration Hub Service (OIH Services)</b>: provide the functionality of the OIH Framework and are mostly built and consumed as Docker images or npm packages. </p>
+
+    <p><b>Open Integration Hub Platform (OIH Platform)</b>: provides a hosted version of a subset of the OIH Framework. The included OIH Services are deployed, run, and managed on a central cloud infrastructure. The OIH Platform also provides its own user interface and additional functionality which may not be open sourced.</p>
+
+    <p><b>Provider</b>: Provider is the entity providing access to and usage of the OIH Platform. </p>
+
+    <p><b>Tenant</b>: The person or entity who uses the OIH Platform to create and provide Flow Templates. The Tenant is the customer of the Provider. During the beta test each User is a Tenant.</p>
+
+    <p><b>User</b>: The User of the Open Integration Hub Platform is an individual that is on behalf of a Tenant responsible for the administration of the Tenants integrations. A User manages these integrations via the OIH Platform and provides them for consumption to End Users. End-Users are users of service provided by a Tenant to its customers or other third parties. </p>
+</div>
+<br>
+<br>
+<h2> 3.	OIH Platform</h2>
+<div class="imprint-list-block">
+    <ol>
+        <li> The OIH Platform includes, to the extent of the features it provides, the ability to create, edit, and utilize the services offered, e.g. Connectors and Flow Templates. It can be used by Tenants for their own usage or to provide functionality which utilizes the OIH Platform to End-Users (e.g. usage of a Flow Instance by an End-User.</li>
+
+        <li> Connectors are offered by the Provider. A Tenant can propose to the Provider to include Connectors developed by the Tenant in the OIH Platform. If the proposal is accepted, the Tenant transfers all rights for the Connector to the Provider as needed for usage on the OIH Platform without limitation in time and place, unless the Connector is made available by the Tenant to the Provider under an open source license specified by the Provider. A Tenant may choose to have their custom developed Connectors be made available only for their own Tenant as a private Connector. </li>
+
+        <li> A Flow Template can either be provided by the Provider or can be created by a User for the own use of a Tenant. Any Flow Template is being made available “as it is” without any warranty of any kind for any defects, malfunctions, data losses etc. unless such defects are due to willful misconduct of the Provider.</li>
+
+        <li> The Provider reserves the right to reject to publish a Connector and / or a Flow Template or to remove it from the OIH Platform in its sole discretion. In general, a User will be informed if and why a Connector or Flow Template is not published or removed. </li>
+    </ol>
+</div>
+<br>
+<br>
+<h2> 4.	Design and Usage of a Flow Template</h2>
+<div class="imprint-list-block">
+    <ol>
+        <li>	Each User can design Flow Templates for their own usage or for the usage of End Users. To run the Flow Template the User might have to enter information required, e.g. Credentials, variables, and customizations.</li>
+
+        <li>	If a Flow Instance shall exchange data with a third-party service, the User or End-User must provide the Credentials for the service, if applicable. Otherwise, usage of a Component and thus the functionality of a Flow Instance is at least limited. In addition, usage of third-party services by means of a Component can be subject to license agreements of the relevant service provider, e.g. API license agreements, which the User or End-User might have to conclude on its own behalf with the relevant service provider. The Provider is not party to such agreements and not affiliated with third-party service providers even if a Component to use such service has been made available on the OIH Platform.</li>
+
+        <li>	The Provider does not assume any liability for third-party services, as it only allows usage of these services by the means being made available by the relevant service provider (e.g. usage of public APIs).</li>
+</ol>
+</div>
+<br>
+<br>
+<h2> 5.	Availability of the OIH Platform</h2>
+<div class="imprint-list-block">
+During the beta test of the OIH Platform the Provider intends to make it available without any unplanned downtime. The Provider nevertheless cannot promise any percentage of uptime and the OIH Platform might not be available without prior notice. In general, the Provider indents to inform the Users of any planed down time in advance. 
+</div>
+<br>
+<br>
+
+<h2> 6.	Usage of the OIH Platform, Term and Termination</h2>
+<div class="imprint-list-block">
+    <ol>
+        <li> Usage of the OIH Platform requires registration of a User account. For registration all data being marked as required must be stated correctly. Only one User account can be registered per person. We are free to reject any application for registration of a User account.</li>
+        <li> Any User account can be terminated by any party any time without notice. If the User terminates its account Flow Template published under the account for usage by other Users will still be available on the OIH Platform to other Users being subject to the license as set by the User. </li>
+    </ol>
+</div>
+<br>
+<br>
+<h2> 7.	Data Protection</h2>
+<div class="imprint-list-block">
+If for execution of a Flow Instance personal data is processed on be-half of the Tenant or its End-User the Data Processing Agreement, Annex 1, applies. 
+</div>
+<br>
+<br>
+<h2> 8.	Liability</h2>
+<div class="imprint-list-block">
+If not agreed otherwise in this Agreement, the Provider is only liable for intend or gross negligence as the OIH Platform is being made available without charge. Each Tenant / User has to keep in mind that the OIH Platform is offered as a beta test and therefore things can go wrong and might go wrong. During the beta test any error, malfunction, loss of data can happen anytime. 
+</div>
+<br>
+<br>
+<h2> 9.	Final provisions</h2>
+<div class="imprint-list-block">
+    <ol>
+        <li> This Agreement represents the entire understanding between the parties concerning its subject matter. Any conflicting ancillary agreements and prior agreements on the contractual subject matter are herewith rendered void.</li> 
+        <li> Amendments and additions to this Agreement must be in text form, unless a stricter form is prescribed by statute. This also applies to any waiver of this form requirement.</li>
+        <li> The parties' general terms and conditions do not apply to this Agreement. This applies even if undisputed reference was made to their inclusion in later documents which are related to this Agreement.</li>
+        <li> If a provision of this Agreement is or becomes wholly or partially void, invalid or non-enforceable, or a necessary provision is not contained in the Agreement, the validity and enforceability of all other provisions of this Agreement will not be affected. </li>
+        <li> The Agreement is governed exclusively by the law of the Federal Republic of Germany. International private law does not apply unless mandatory. If a User is a consumer as stipulated in Sec. 13 German Civil Code (BGB) the German laws apply only so far as mandatory stipulations for the protection of consumers allow.</li>
+        <li> Exclusive place of jurisdiction for all disputes in connection with this agreement shall be at the registered office of the Provider unless the User is a consumer as stipulated in Sec. 13 German Civil Code (BGB) and has its place of residence in the European Union.</li>
+    </ol>
+</div>
+<br>
+<br>
+</div>
