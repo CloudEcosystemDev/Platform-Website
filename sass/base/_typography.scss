@@ -12,3 +12,43 @@ body {
 .heading-secondary {
   font-size: 3.5rem;
 }
+
+.intro-header {
+  font-size: 48px;
+  font-weight: 600;
+  color: #de063a;
+}
+
+.section-header {
+  font-weight: 600;
+  font-size: 48px;
+}
+
+.section-subtext {
+  font-weight: 200;
+  font-size: 24px;
+}
+
+.section-header-white {
+  font-weight: 600;
+  font-size: 48px;
+  color: $color-white;
+}
+
+.section-subtext-white {
+  font-weight: 200;
+  font-size: 24px;
+  color: $color-white;
+}
+
+
+.question-header {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.question-text {
+  font-size: 24px;
+  font-weight: 400;
+  margin-left: 15px;
+}

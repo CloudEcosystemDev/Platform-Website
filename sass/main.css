@@ -29,6 +29,22 @@ body {
   font-size: 3.5rem;
 }
 
+.intro-header {
+  font-size: 48.1304px;
+  font-weight: 600;
+  color: #de063a;
+}
+
+.section-header {
+  font-weight: 600;
+  font-size: 48px;
+}
+
+.section-subtext {
+  font-weight: 200;
+  font-size: 24px;
+}
+
 .footer {
   background-color: #233046;
   width: 100%;
@@ -165,14 +181,14 @@ body {
   }
 }
 
-a {
+.footer-link {
   text-decoration: none;
   color: white;
   font-weight: normal;
   font-size: 16px;
 }
 
-a:hover {
+.footer-link:hover {
   color: beige;
 }
 
@@ -240,12 +256,6 @@ a:hover {
     padding-right: 22px;
     padding-left: 22px;
   }
-}
-
-.intro-header {
-  font-size: 48.1304px;
-  font-weight: 600;
-  color: #de063a;
 }
 
 .buttons {
@@ -387,12 +397,6 @@ a:hover {
     padding-right: 22px;
     padding-left: 22px;
   }
-}
-
-.intro-header-center {
-  font-size: 48px;
-  font-style: bold;
-  color: #000;
 }
 
 .item-steps {
@@ -547,11 +551,6 @@ a:hover {
   margin: 180px auto 0px auto;
 }
 
-.growing-header {
-  font-size: 48.1304px;
-  color: black;
-}
-
 .connectors-container {
   display: flex;
   margin-top: 50px;
@@ -593,13 +592,6 @@ a:hover {
   .comp-row {
     grid-template-columns: auto;
   }
-}
-
-.text {
-  max-width: 1264px;
-  margin: 0 auto;
-  font-weight: 200;
-  font-size: 24px;
 }
 
 .comp-row-mid {
@@ -962,14 +954,26 @@ a:hover {
 }
 
 .imprint {
-  padding-top: 50px;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-top: 100px;
+  padding-left: 200px;
+  padding-right: 300px;
   padding-bottom: 150px;
 }
 
 .imprint div {
   padding-top: 30px;
+}
+
+.imprint-list-block {
+  padding-left: 20px;
+}
+
+.dark-link {
+  color: #233046;
+}
+
+.dark-link:hover {
+  color: #000;
 }
 
 .demo-section {
@@ -978,7 +982,7 @@ a:hover {
 }
 
 .book-demo {
-  padding-top: 50px;
+  padding-top: 160px;
   padding-bottom: 150px;
   display: flex;
   display: -moz-flex;
