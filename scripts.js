@@ -173,7 +173,7 @@ function textChanger(ind, text) {
 
 // console.log("hre you hae console...",window.location.href)
 
-if(window.location.href.includes("/book-demo")){
+if(window.location.href.includes("/book-demo")||window.location.href.includes("/contact-us")){
   window.addEventListener("load", function (event) {
     document.querySelector(".pipedriveWebForms").setAttribute("style", "display: none;");
     setTimeout(function(){
