@@ -30,7 +30,7 @@ body {
 }
 
 .intro-header {
-  font-size: 48.1304px;
+  font-size: 60px;
   font-weight: 600;
   color: #de063a;
 }
@@ -43,6 +43,29 @@ body {
 .section-subtext {
   font-weight: 200;
   font-size: 24px;
+}
+
+.section-header-white {
+  font-weight: 600;
+  font-size: 48px;
+  color: #fff;
+}
+
+.section-subtext-white {
+  font-weight: 200;
+  font-size: 24px;
+  color: #fff;
+}
+
+.question-header {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.question-text {
+  font-size: 24px;
+  font-weight: 400;
+  margin-left: 15px;
 }
 
 .footer {
@@ -261,11 +284,17 @@ body {
 .buttons {
   margin-top: 72px;
 }
+.buttons > :first-child {
+  margin-right: 20px;
+}
 @media only screen and (max-width: 745px) {
   .buttons {
     height: 130px;
     display: flex;
     flex-direction: column;
+  }
+  .buttons > :first-child {
+    margin-right: 0px;
   }
   .buttons > :last-child {
     margin-top: auto;
@@ -769,21 +798,10 @@ body {
   font-weight: 200;
 }
 
-.question-text {
-  font-size: 32px;
-  color: #000;
-  margin-left: 15px;
-}
-
 .questions-container {
   max-width: 1264px;
   text-align: initial;
   margin: 70px auto 0px auto;
-}
-
-.question-header {
-  font-size: 32px;
-  font-weight: 600;
 }
 
 .questions {
@@ -938,6 +956,7 @@ body {
 .control-text-subheader {
   font-weight: normal;
   font-size: 14px;
+  text-align: left;
   display: flex;
 }
 
