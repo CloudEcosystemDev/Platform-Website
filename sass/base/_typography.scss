@@ -16,6 +16,7 @@ body {
 .intro-header {
   font-size: 60px;
   font-weight: 600;
+  line-height: 1.4;
   color: #de063a;
 }
 
@@ -50,5 +51,11 @@ body {
 .question-text {
   font-size: 24px;
   font-weight: 400;
+  margin-left: 15px;
+}
+
+.question-body {
+  font-size: 24px;
+  font-weight: 200;
   margin-left: 15px;
 }
