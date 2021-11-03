@@ -39,11 +39,17 @@ body {
 .section-header {
   font-weight: 600;
   font-size: 48px;
+  text-align: center;
+  max-width: 1264px;
+  margin: auto;
 }
 
 .section-subtext {
   font-weight: 200;
   font-size: 24px;
+  text-align: center;
+  max-width: 1088px;
+  margin: 20px auto;
 }
 
 .section-header-white {
@@ -328,21 +334,6 @@ body {
     padding-right: 22px;
     padding-left: 22px;
   }
-}
-
-.intro-sass-header {
-  font-size: 48.1304px;
-  color: #23293d;
-}
-
-.intro-sass-subheader {
-  margin-top: 32px;
-  margin-bottom: 36px;
-  font-size: 24px;
-  color: black;
-  max-width: 1000px;
-  margin: 0 auto;
-  font-weight: 200;
 }
 
 .img-triplet {
@@ -665,12 +656,6 @@ body {
   }
 }
 
-.today-header {
-  font-size: 48px;
-  color: black;
-  font-size: 48px;
-}
-
 .card-item {
   height: 784px;
   max-width: 380px;
@@ -886,16 +871,6 @@ body {
     padding-right: 22px;
     padding-left: 22px;
   }
-}
-
-.intro-header-control {
-  font-weight: 600;
-  font-size: 48px;
-}
-
-.subheader-text {
-  font-weight: 200;
-  font-size: 24px;
 }
 
 .control-container {
