@@ -18,10 +18,16 @@
 
 .buttons {
   margin-top: 72px;
+  & > :first-child {
+    margin-right: 20px;
+  }
   @media only screen and (max-width: 745px) {
     height: 130px;
     display: flex;
     flex-direction: column;
+    & > :first-child {
+      margin-right: 0px;
+    }
     & > :last-child {
       margin-top: auto;
     }

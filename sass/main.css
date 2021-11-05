@@ -30,19 +30,55 @@ body {
 }
 
 .intro-header {
-  font-size: 48.1304px;
+  font-size: 60px;
   font-weight: 600;
+  line-height: 1.4;
   color: #de063a;
 }
 
 .section-header {
   font-weight: 600;
   font-size: 48px;
+  text-align: center;
+  max-width: 1264px;
+  margin: auto;
 }
 
 .section-subtext {
   font-weight: 200;
   font-size: 24px;
+  text-align: center;
+  max-width: 1088px;
+  margin: 20px auto;
+}
+
+.section-header-white {
+  font-weight: 600;
+  font-size: 48px;
+  color: #fff;
+}
+
+.section-subtext-white {
+  font-weight: 200;
+  font-size: 24px;
+  color: #fff;
+}
+
+.question-header {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.question-text {
+  font-size: 24px;
+  font-weight: 400;
+  margin-left: 15px;
+}
+
+.question-body {
+  font-size: 24px;
+  font-weight: 200;
+  margin-left: 15px;
 }
 
 .footer {
@@ -261,11 +297,17 @@ body {
 .buttons {
   margin-top: 72px;
 }
+.buttons > :first-child {
+  margin-right: 20px;
+}
 @media only screen and (max-width: 745px) {
   .buttons {
     height: 130px;
     display: flex;
     flex-direction: column;
+  }
+  .buttons > :first-child {
+    margin-right: 0px;
   }
   .buttons > :last-child {
     margin-top: auto;
@@ -292,21 +334,6 @@ body {
     padding-right: 22px;
     padding-left: 22px;
   }
-}
-
-.intro-sass-header {
-  font-size: 48.1304px;
-  color: #23293d;
-}
-
-.intro-sass-subheader {
-  margin-top: 32px;
-  margin-bottom: 36px;
-  font-size: 24px;
-  color: black;
-  max-width: 1000px;
-  margin: 0 auto;
-  font-weight: 200;
 }
 
 .img-triplet {
@@ -629,12 +656,6 @@ body {
   }
 }
 
-.today-header {
-  font-size: 48px;
-  color: black;
-  font-size: 48px;
-}
-
 .card-item {
   height: 784px;
   max-width: 380px;
@@ -769,21 +790,10 @@ body {
   font-weight: 200;
 }
 
-.question-text {
-  font-size: 32px;
-  color: #000;
-  margin-left: 15px;
-}
-
 .questions-container {
   max-width: 1264px;
   text-align: initial;
   margin: 70px auto 0px auto;
-}
-
-.question-header {
-  font-size: 32px;
-  font-weight: 600;
 }
 
 .questions {
@@ -863,16 +873,6 @@ body {
   }
 }
 
-.intro-header-control {
-  font-weight: 600;
-  font-size: 48px;
-}
-
-.subheader-text {
-  font-weight: 200;
-  font-size: 24px;
-}
-
 .control-container {
   margin-top: 76px;
   justify-content: space-around;
@@ -938,6 +938,7 @@ body {
 .control-text-subheader {
   font-weight: normal;
   font-size: 14px;
+  text-align: left;
   display: flex;
 }
 
