@@ -1,0 +1,41 @@
+.section-build {
+  padding: 40px 140px 40px 140px;
+  text-align: center;
+  width:100%;
+  margin: 100px auto 100px auto;
+  background-color: lightgray;
+  @media only screen and (max-width: 1000px) {
+    padding: 0px 40px 0px 40px;
+  }
+  @media only screen and (max-width: 800px) {
+    padding-right: 44px;
+    padding-left: 44px;
+  }
+  @media only screen and (max-width: 620px) {
+    padding-right: 22px;
+    padding-left: 22px;
+  }
+}
+
+
+.build-text-header {
+  font-weight: 600;
+  font-size: 18px;
+  display: flex;
+}
+.build-text-subheader {
+  font-weight: normal;
+  font-size: 14px;
+  text-align: left;
+  display: flex;
+}
+.build-text {
+  margin-left: 16px;
+  justify-content: flex-start;
+  width: inherit;
+}
+.build-image {
+  margin-top: auto;
+  margin-bottom: auto;
+  float: left;
+}
