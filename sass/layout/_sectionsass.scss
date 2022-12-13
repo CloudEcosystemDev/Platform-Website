@@ -40,13 +40,21 @@
   text-align: center;
   flex-direction: column;
 }
-.logo-text {
+.logo-text-header {
   font-weight: 600;
   font-size: 24px;
   line-height: 36px;
+  text-align: center;
+  color: #000000;
+}
+.logo-text {
+  font-weight: 200;
+  font-size: 24px;
   max-width: 360px;
   text-align: center;
   color: #000000;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .logo-text-white {
   font-weight: 600;
